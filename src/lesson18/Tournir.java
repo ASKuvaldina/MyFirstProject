@@ -1,9 +1,6 @@
 package lesson18;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
+import java.util.*;
 
 public class Tournir {
     private HashMap<String, Integer> table = new HashMap<>();
@@ -41,22 +38,27 @@ public class Tournir {
             if (currentBall > ball) {
                 table.put(name, (currentBall - ball));
             } else {
-                table.put(name,0);
+                table.put(name, 0);
             }
         } else {
             System.out.println("Нет такой команды");
         }
     }
-    public void printSredniyBall (){
+
+    public void printSredniyBall() {
         int obshiiBall = 0;
-        for (String key : table.keySet()){
+        for (String key : table.keySet()) {
             obshiiBall = obshiiBall + table.get(key);
         }
         System.out.println("Средний балл команд: " + (double) obshiiBall / table.size());
     }
-    public  void sortByHightToLowBall(){
-        ArrayList tableInList = new ArrayList(table.entrySet());
+
+    public void sortByValue() {
+        LinkedList<HashMap.Entry<String, Integer>> tableInList = new LinkedList<HashMap.Entry<String, Integer>>(table.entrySet());
         Collections.sort(tableInList, new CompareHightToLowBall());
+        ValueComparator
+
+
     }
 
 }

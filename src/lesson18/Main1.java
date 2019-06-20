@@ -1,5 +1,7 @@
 package lesson18;
 
+
+
 public class Main1 {
     public static void main(String[] args) {
         Tournir tournir = new Tournir();
@@ -20,7 +22,7 @@ public class Main1 {
 
 
 
-        tournir.sortByHightToLowBall();
+        tournir.sortByValue();
         tournir.printTable();
         tournir.printVictoryComand();
         tournir.printSredniyBall();
