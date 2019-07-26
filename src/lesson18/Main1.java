@@ -22,7 +22,7 @@ public class Main1 {
 
 
 
-        tournir.sortByValue();
+
         tournir.printTable();
         tournir.printVictoryComand();
         tournir.printSredniyBall();

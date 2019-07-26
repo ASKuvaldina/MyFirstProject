@@ -53,12 +53,6 @@ public class Tournir {
         System.out.println("Средний балл команд: " + (double) obshiiBall / table.size());
     }
 
-    public void sortByValue() {
-        LinkedList<HashMap.Entry<String, Integer>> tableInList = new LinkedList<HashMap.Entry<String, Integer>>(table.entrySet());
-        Collections.sort(tableInList, new CompareHightToLowBall());
-        ValueComparator
 
-
-    }
 
 }
