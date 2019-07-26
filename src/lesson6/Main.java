@@ -22,5 +22,6 @@ public class Main {
         System.out.println("Glas - " + countGlas);
         System.out.println("Soglas - " + countSoglas);
         System.out.println("Simb - " + countSimvols);
+
     }
 }
